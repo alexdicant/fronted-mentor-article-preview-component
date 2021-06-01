@@ -1,0 +1,80 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-dlue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: var(--light-grayish-blue);
+  color: var(--desaturated-dark-dlue);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+  line-height: 2rem;
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 300px;
+  width: 50vw;
+  background-color: white;
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+.card-picture {
+  background: url(../images/drawers.jpg) no-repeat center/cover;
+  height: 300px;
+  width: 40%;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-info {
+  width: 60%;
+  padding: 30px;
+}
+
+.card-info h1,
+p {
+  padding-bottom: 20px;
+}
+
+.card-info-avatar {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Atribution */
+
+footer {
+  height: 5vh;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
