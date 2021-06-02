@@ -35,7 +35,8 @@ h1 {
 
 .card {
   height: 300px;
-  width: 50vw;
+  width: 70vw;
+  max-width: 900px;
   background-color: white;
   display: flex;
   flex-shrink: 0;
@@ -54,14 +55,45 @@ h1 {
   padding: 30px;
 }
 
-.card-info h1,
-p {
+.card-info h1 {
   padding-bottom: 20px;
 }
 
-.card-info-avatar {
+.card-info--extract {
+  padding-bottom: 30px;
+}
+
+.card-info--avatar {
+  height: 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info--avatar-left {
+  display: flex;
+  align-items: center;
+}
+
+.card-info--avatar-picture img {
+  height: 40px;
+  border-radius: 100px;
+}
+
+.card-info--avatar-info {
+  padding-left: 1rem;
+}
+
+.imagesvg {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: var(--light-grayish-blue);
+  border: 10px solid var(--light-grayish-blue);
+}
+
+.circle {
+  border-radius: 100%;
 }
 
 /* Atribution */
